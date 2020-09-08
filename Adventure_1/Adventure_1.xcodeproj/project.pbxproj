@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FC2B0334250052BA005CE853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B0333250052BA005CE853 /* AppDelegate.swift */; };
-		FC2B0336250052BA005CE853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B0335250052BA005CE853 /* SceneDelegate.swift */; };
-		FC2B0338250052BA005CE853 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B0337250052BA005CE853 /* ContentView.swift */; };
 		FC2B033A250052BA005CE853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2B0339250052BA005CE853 /* Assets.xcassets */; };
 		FC2B033D250052BA005CE853 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2B033C250052BA005CE853 /* Preview Assets.xcassets */; };
 		FC2B0340250052BA005CE853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2B033E250052BA005CE853 /* LaunchScreen.storyboard */; };
 		FC2B034B250052BA005CE853 /* Adventure_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B034A250052BA005CE853 /* Adventure_1Tests.swift */; };
 		FC2B0356250052BA005CE853 /* Adventure_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B0355250052BA005CE853 /* Adventure_1UITests.swift */; };
+		FC9165792507F31B00825483 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9165782507F31B00825483 /* main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +36,6 @@
 /* Begin PBXFileReference section */
 		FC2B0330250052BA005CE853 /* Adventure_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2B0333250052BA005CE853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC2B0335250052BA005CE853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC2B0337250052BA005CE853 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC2B0339250052BA005CE853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC2B033C250052BA005CE853 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC2B033F250052BA005CE853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		FC2B0351250052BA005CE853 /* Adventure_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Adventure_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2B0355250052BA005CE853 /* Adventure_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventure_1UITests.swift; sourceTree = "<group>"; };
 		FC2B0357250052BA005CE853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC9165782507F31B00825483 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				FC2B0333250052BA005CE853 /* AppDelegate.swift */,
-				FC2B0335250052BA005CE853 /* SceneDelegate.swift */,
-				FC2B0337250052BA005CE853 /* ContentView.swift */,
+				FC9165782507F31B00825483 /* main.storyboard */,
 				FC2B0339250052BA005CE853 /* Assets.xcassets */,
 				FC2B033E250052BA005CE853 /* LaunchScreen.storyboard */,
 				FC2B0341250052BA005CE853 /* Info.plist */,
@@ -243,6 +240,7 @@
 				FC2B0340250052BA005CE853 /* LaunchScreen.storyboard in Resources */,
 				FC2B033D250052BA005CE853 /* Preview Assets.xcassets in Resources */,
 				FC2B033A250052BA005CE853 /* Assets.xcassets in Resources */,
+				FC9165792507F31B00825483 /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,8 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2B0334250052BA005CE853 /* AppDelegate.swift in Sources */,
-				FC2B0336250052BA005CE853 /* SceneDelegate.swift in Sources */,
-				FC2B0338250052BA005CE853 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
