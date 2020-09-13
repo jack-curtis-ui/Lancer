@@ -17,9 +17,6 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BqO-H9-yIb">
                                 <rect key="frame" x="85" y="864" width="1197" height="113"/>
-                                <connections>
-                                    <segue destination="xDm-xm-6Ks" kind="embed" id="ZdN-8s-phb"/>
-                                </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnY-KD-xVR">
                                 <rect key="frame" x="358" y="659" width="131" height="55"/>
@@ -71,20 +68,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yq4-YW-pWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-358.41874084919471" y="158.7890625"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="TEY-L8-iI3">
-            <objects>
-                <viewController id="xDm-xm-6Ks" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K2Z-4Y-0fs">
-                        <rect key="frame" x="0.0" y="0.0" width="1197" height="113"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6fC-0e-746" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-179" y="-356"/>
         </scene>
     </scenes>
 </document>
