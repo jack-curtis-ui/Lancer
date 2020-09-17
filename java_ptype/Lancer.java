@@ -2,35 +2,23 @@
 import java.io.BufferedReader; 
 import java.io.IOException; 
 import java.io.InputStreamReader; 
+import java.lang.Math;
+
 public class Lancer{
     static BufferedReader reader =  new BufferedReader(new InputStreamReader(System.in));  
+    public static double fuel = 20.0;
+    public static int torpedos = 5;
     public static void main(String args[]) throws IOException{
         //Intro to Adventure 1        
         //Enter data using BufferReader         
-        introScreen();
-        char selection = launchMenu();
-
-        while(selection != 'Q'){
-            if(selection == 'S'){
-                newGame();
-                selection = launchMenu();
-            } else if(selection == 'T'){
-                readTutorial();
-                selection = launchMenu();
-            } else{
-                System.out.println();
-                System.out.println("Please Enter a valid key");
-                selection = launchMenu();
-            } 
-    
-        }
-        quitGame();
+        //introScreen();
+        launchMenu();
         
         
         
     }
     //Displays the Main menu
-    public static char launchMenu() throws IOException{
+    public static void launchMenu() throws IOException{
         for(int i = 0; i < 13; i++){
             if(i < 10) System.out.println("//////////////////////////////////////////////////////////////////////////////////////////////////////");
             else System.out.println();
@@ -45,38 +33,234 @@ public class Lancer{
         int dig_input = -1;
         boolean menuSelected = false;
         while(!menuSelected){
-            
             dig_input = reader.read();
             char input = (char)dig_input;
+            //Start a New Game
             if(input == 'S'|| input == 's'){
                 menuSelected = true;
-                return 'S';
+                newGame();
+            //Read the Tutorial
             } else if(input == 'T' || input == 't'){
                 menuSelected = true;
-                return 'T';
+                readTutorial();
+                launchMenu();
+            //Quit Game
             } else if(input == 'Q' || input == 'q'){
                 menuSelected = true;
-                return 'Q';
-            } else return input;
+                quitGame();
+            } 
         }
-        return 'E';
     }
-    
-    //public static void lightJump()
-    //public static void checkFuel()
-    //public static void scram()
-    //public static void engageEnemy()
-    //public static void fireLaser()
-    //public static void fireTorpedo()
-    //public static void fireRockets()
-    //public static void fireGrenade()
-    //public static void shieldsUp()
 
+    public static void choiceMenu()throws IOException{
+        int dig_input = -1;
+        boolean menuSelected = false;
+        //keeps menu from printing after \n
+        int i = 0;
+        while(!menuSelected){
+            System.out.println();
+            if(i!=1) System.out.println("C: Check Fuel -- X: Scram! -- W: Weapons -- S: Shields -- L: Land -- Q: Quit");
+            dig_input = reader.read();
+            char input = (char)dig_input;
+            //Check Fuel levels
+            if(input == 'C'|| input == 'c'){
+                checkFuel();
+                i = 0;
+            }//Scram! 
+            else if(input == 'X' || input == 'x'){
+                scram();
+                i = 0;
+            }//open Weapons Menu
+            else if(input == 'W' || input == 'w'){
+                weaponsMenu();
+                i = 0;
+            }//Shields up
+            else if(input == 'S' || input == 's'){
+                shieldsUp();
+                i = 0;
+            }
+            else if(input == 'L' || input == 'l'){
+                landShipMenu();
+                i = 0;
+            }//Returns to launch screen 
+            else if(input == 'Q' || input == 'q'){
+                menuSelected = true;
+                launchMenu();
+            //keeps \n from displaying menu
+            }else if(dig_input == 10 || dig_input == 13){
+                i = 1;
+            }
+            
+        }
+    }
+    //Weapons Menu
+    public static void weaponsMenu() throws IOException{
+        int dig_input = -1;
+        boolean menuSelected = false;
+        //keeps menu from printing after \n
+        int i = 0;
+        while(!menuSelected){
+            System.out.println();
+            if(i!=1) System.out.println("L: Lasers -- T: Quantum Torpedos -- G: Concussion Grenades -- Q: Back");
+            dig_input = reader.read();
+            char input = (char)dig_input;
+            //Lasers
+            if(input == 'L'|| input == 'l'){
+                fireLaser();
+                i = 0;
+            }
+            //Quantum Torpedos
+            else if(input == 'T' || input == 't'){
+                fireTorpedo();
+                i = 0;
+            }//Concussion Grenades
+            else if(input == 'G' || input == 'g'){
+                fireGrenade();
+                i = 0;
+            }//Returns to launch screen 
+            else if(input == 'Q' || input == 'q'){
+                menuSelected = true;
+                choiceMenu();
+            //keeps \n from displaying menu
+            }else if(dig_input == 10 || dig_input == 13){
+                i = 1;
+            }
+            
+        }
+    }
+    //Ground Menu
+    public static void landShipMenu() throws IOException{
+        System.out.println("\nGo explore this planet's suface and search for resources!");
+        int dig_input = -1;
+        boolean menuSelected = false;
+        //keeps menu from printing after \n
+        int i = 0;
+        while(!menuSelected){
+            System.out.println();
+            if(i!=1) System.out.println("R: Refuel -- W: Restock Weapons -- Q: Take Off");
+            dig_input = reader.read();
+            char input = (char)dig_input;
+            //refuel
+            if(input == 'r'|| input == 'R'){
+                i = 0;
+                refuel();
+            }//restock weapons
+            else if(input == 'W' || input == 'w'){
+                i = 0;
+                restockWeap();
+            }//return to orbit
+            else if(input == 'Q' || input == 'q'){
+                menuSelected = true;
+                System.out.println("\nExiting planet atomsphere");
+                choiceMenu();
+            }//keeps \n from displaying menu
+            else if(dig_input == 10 || dig_input == 13){
+                i = 1;
+            }
+        }    
+    }
+
+    public static void refuel() throws IOException{
+        System.out.print("\nEnter how many fuel cells you found?\n");
+        int i = 0;
+        reader.read();
+        while (i < 2){
+            if(i == 1){
+                fuel += Integer.parseInt(reader.readLine());
+                checkFuel();
+            }
+            i++;
+        }
+    }
+    public static void restockWeap() throws IOException{
+        System.out.print("\nEnter how many torpedos you found?\n");
+        int i = 0;
+        reader.read();
+        while (i < 2){
+            if(i == 1){
+                torpedos += Integer.parseInt(reader.readLine());
+                System.out.println("\nYou now have "+ torpedos+ " quantum torpedos");
+            }
+            i++;
+        }
+    }
+
+    //Fuel Gauge
+    public static void checkFuel(){
+        if(fuel <= 0) {
+            fuel = 0;
+            System.out.println("\nYou're out of fuel, land and refill");
+        }
+        else System.out.println("\nYou currently have: " + (Math.floor(fuel* 100) /100) +" fuel rods");
+    }
+    //Scram Drive
+    public static void scram(){
+        if(fuel <= 0) System.out.println("Out of fuel, cannot Scram");
+        else{    
+            System.out.println("\nActivating Scram!");
+            fuel -= 0.5;
+            System.out.println("\nYou are now safe from harm\n");
+            checkFuel();
+        }
+    }
+    //Shields
+    public static void shieldsUp(){
+        if(fuel <= 0) System.out.println("Out of fuel, shields down");
+        else{
+            System.out.println("\nActivating Shields! You have 30 seconds to escape!\n");
+            fuel -= 0.1;
+            checkFuel();
+        }
+    }
+    //Weapons systems for Lancer
+    //Lasers
+    public static void fireLaser(){
+        System.out.println("\nCharging Laser to fire");
+        double rand = Math.random();
+        if(rand > 0.7) {
+            System.out.println("\nYou hit an Enemy!");
+        } else{
+            System.out.println("\nYou Missed!");
+        }
+    }
+    //Quantum Torpedos
+    public static void fireTorpedo(){
+        if (torpedos == 0) System.out.println("\nAll Quantum Torpedos Gone!");
+        else{   
+            System.out.println("\nLoading Quantum Torpedo to fire");
+            torpedos -= 1;
+            double rand = Math.random();
+            if(rand > 0.5){
+                System.out.println("\nEnemy sent to quantum realm!");
+            } else {
+                System.out.println("\nYou Missed!");
+            }
+            System.out.println("\nOnly "+ torpedos + " torpedos left");
+        }
+    }
+    //Concussion Grenades
+    public static void fireGrenade(){
+        if (fuel <= 0) System.out.println("\nOut of fuel, can't concuss!");
+        else{
+            System.out.println("\nTargeting Concussion Grenade");
+            fuel -= 1.0;
+            double rand = Math.random();
+            if(rand > 0.2){ 
+                System.out.println("\nEnemies Concussed!");
+            } else{
+                System.out.println("\nYou Missed!");
+            }
+            checkFuel();
+        }
+    }
+    //public static void lightJump()
     //set up a new Game
     public static void newGame() throws IOException{
+        fuel = 20.0;
+        torpedos = 5;
         startScenario();
-
-
+        System.out.println("\nSomething Happend!");
+        choiceMenu();
 
     }
     //exit game
@@ -110,14 +294,25 @@ public class Lancer{
         "make sure the Argonauts aren’t up to no good!");
         pressAnyKeyToContinue();
         System.out.println("If you haven't read your ship's tutorial, hit 'T' to go back now! "+
-        "Or press 'C' to continue");
+        "or press 'C' to continue");
         
-        if ((char)reader.read() == 'T'||(char)reader.read() =='t') readTutorial();
 
+        int dig_input = -1;
+        boolean menuSelected = false;
+        while(!menuSelected){
+            dig_input = reader.read();
+            char input = (char)dig_input;
+            if (input == 'T'||input =='t'){ 
+                menuSelected = true;
+                readTutorial();
+            } else if (input == 'c' || input == 'C'){
+                menuSelected = true;
+            } 
+        }
     }
     
     //Walk through of tutorial
-    public static void readTutorial(){
+    public static void readTutorial()throws IOException{
         //Fuel
         System.out.println("Your Lancer spacecraft is equipped with 20 fuel "+
         "cells.  This should be enough to complete your mission, but you will "+
@@ -133,28 +328,26 @@ public class Lancer{
         //Scram
         System.out.println("Your Lancer has a device called a Scram Drive.  A Scram "+
         "drive provides a short but powerful burst.  If you are in a tough situation "+
-        "with Argonaut ships, you just hit the orange button on your dashboard and the "+
+        "with Argonaut ships, you just hit the 'X' button on your dashboard and the "+
         "Scram Drive will allow you to 'scram' from the area and get to safety.  It "+
-        "will burn a half of a fuel cell each time you use it.  If you see the orange"+
-        " button flashing, it means your on-board computer thinks you need to scram "+
-        "because enemy ships have you in their sights, but you must push the orange "+
-        "button to activate the Scram system.  The Scram button is the orange button "+
-        "just to the left of the dashboard.");
+        "will burn a half of a fuel cell each time you use it.  If you see a large enemy"+
+        " your on-board computer will think you need to scram but you must push the 'X' "+
+        "button to activate the Scram system");
         pressAnyKeyToContinue();
-        //Weapons
+        //manuvering
         System.out.println("We have set the maneuvering rockets to their highest "+
         "setting.  Which means your Lancer will turn rapidly, allowing you to "+
         "outmaneuver any Argonaut ships you may encounter.  But this means you "+
         "will use more fuel when you execute sharp turns.");
         pressAnyKeyToContinue();
-        System.out.println("To the right of your console you have a weapons control "+
-        "system.  Push the blue button to activate your lasers.  Lasers are used in a "+
+        //weapons
+        System.out.println("If you press 'W', you have the weapons control "+
+        "system.  Push 'L' to activate your lasers.  Lasers are used in a "+
         "dog fight with enemy ships.  You can fire the lasers rapidly as they don’t "+
-        "need to recharge.  If you push the blue button again it will toggle to the "+
+        "need to recharge.  If you push 'T' it will toggle to the "+
         "quantum torpedoes.  Your quantum torpedoes can take out a big target like "+
         "an Argonaut cruiser or an Argonaut fighter with its shields at full strength. "+
-        "But your systems must recharge after each volley so you can only fire "+
-        "torpedoes every 30 seconds.  Finally, if you push the blue button once more "+
+        "But you only have five so use them wisely.  Finally, if you push 'G' "+
         "you will activate a concussion grenade.  The concussion grenade is powered by "+
         "the ships main engines.  It sends out a burst of energy that will momentarily "+
         "paralyze all ships in the vicinity, except yours!  It can provide very "+
