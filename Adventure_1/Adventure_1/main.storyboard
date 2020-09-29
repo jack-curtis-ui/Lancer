@@ -24,7 +24,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cx-8f-6NN">
                                 <rect key="frame" x="143" y="856" width="1080" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74X-zg-jNA">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74X-zg-jNA" customClass="GreenButton">
                                         <rect key="frame" x="188" y="37" width="127" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="74X-zg-jNA" secondAttribute="height" multiplier="127:55" id="PBa-2U-PvA"/>
@@ -34,7 +34,7 @@
                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnY-KD-xVR">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnY-KD-xVR" customClass="RedButton">
                                         <rect key="frame" x="383" y="37" width="131" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="YnY-KD-xVR" secondAttribute="height" multiplier="131:55" id="E4o-pb-Dyk"/>
@@ -44,7 +44,7 @@
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGw-Cj-J9t">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGw-Cj-J9t" customClass="BlueButton">
                                         <rect key="frame" x="576" y="37" width="132" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="AGw-Cj-J9t" secondAttribute="height" multiplier="12:5" id="xcp-Ld-8TU"/>
@@ -52,7 +52,7 @@
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="36"/>
                                         <state key="normal" title="Blue"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-qi-eKC">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-qi-eKC" customClass="YellowButton">
                                         <rect key="frame" x="760" y="37" width="133" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="RN5-qi-eKC" secondAttribute="height" multiplier="133:55" id="KNc-Ay-GV6"/>
@@ -88,19 +88,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpd-Ei-aDR">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="84"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3y9-br-sln">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3y9-br-sln" customClass="MidIndicator">
                                         <rect key="frame" x="563" y="24" width="240" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="3y9-br-sln" secondAttribute="height" multiplier="20:3" id="3Qc-8Z-bU5"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODi-qN-noR">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODi-qN-noR" customClass="LeftIndicator">
                                         <rect key="frame" x="168" y="24" width="240" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ODi-qN-noR" secondAttribute="height" multiplier="20:3" id="jar-gG-1sC"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I4x-bD-rUZ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I4x-bD-rUZ" customClass="RightIndicator">
                                         <rect key="frame" x="961" y="24" width="240" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="I4x-bD-rUZ" secondAttribute="height" multiplier="20:3" id="mA6-u5-rs3"/>
@@ -120,13 +120,13 @@
                                     <constraint firstItem="ODi-qN-noR" firstAttribute="bottom" secondItem="3y9-br-sln" secondAttribute="bottom" id="zJ8-Km-NBi"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uoa-yF-3gp">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uoa-yF-3gp" customClass="MidImage">
                                 <rect key="frame" x="376" y="148" width="615" height="649"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ITz-Rx-wVo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ITz-Rx-wVo" customClass="RightImage">
                                 <rect key="frame" x="1037" y="148" width="329" height="649"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h55-et-7yd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h55-et-7yd" customClass="LeftImage">
                                 <rect key="frame" x="0.0" y="148" width="329" height="649"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="329" id="BSl-GS-Mpb"/>
