@@ -6,16 +6,14 @@
 //  Copyright © 2020 Tom Gillis SVII. All rights reserved.
 //
 
-import SwiftUI
+import UIKit
 
-struct ViewController: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+class ViewController: UIViewController {
 
-struct ViewController_Previews: PreviewProvider {
-    static var previews: some View {
-        ViewController()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
+
+
 }
