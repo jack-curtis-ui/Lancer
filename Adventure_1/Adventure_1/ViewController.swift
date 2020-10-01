@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
     //Label for num torpedos on main
     @IBOutlet weak var TorpedoCount: UILabel!
     //Label for num grenades on main
@@ -39,4 +40,5 @@ class ViewController: UIViewController {
     @IBAction func yellowButtonPressed(_ sender: UIButton){
         
     }
+    
 }
