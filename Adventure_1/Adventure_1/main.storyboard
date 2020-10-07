@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iID-c7-5YH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iID-c7-5YH">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +19,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-Sa-Wd8">
                                 <rect key="frame" x="0.0" y="856" width="1366" height="168"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cx-8f-6NN">
                                 <rect key="frame" x="143" y="856" width="1080" height="128"/>
@@ -63,7 +65,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstItem="hJ4-6T-wH4" firstAttribute="firstBaseline" secondItem="4ci-en-wkn" secondAttribute="firstBaseline" id="2vI-Ih-G1J"/>
                                     <constraint firstItem="hJ4-6T-wH4" firstAttribute="top" secondItem="4ci-en-wkn" secondAttribute="top" id="9Em-B9-XXW"/>
@@ -103,7 +105,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstItem="ODi-qN-noR" firstAttribute="centerY" secondItem="Tpd-Ei-aDR" secondAttribute="centerY" id="5MA-hM-vmb"/>
                                     <constraint firstItem="ODi-qN-noR" firstAttribute="bottom" secondItem="3y9-br-sln" secondAttribute="bottom" id="8Wm-TG-j2e"/>
@@ -129,7 +131,7 @@
                                     <constraint firstAttribute="width" constant="200" id="NNZ-AD-wua"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-zY-li3" customClass="LeftImage">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weapons" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-zY-li3" customClass="LeftImage">
                                 <rect key="frame" x="0.0" y="471" width="200" height="330"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="330" id="oe9-z8-qWz"/>
@@ -201,6 +203,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="AHr-Yd-O7u"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0cx-8f-6NN" firstAttribute="leading" secondItem="AHr-Yd-O7u" secondAttribute="leading" constant="143" id="1GN-pk-uD0"/>
@@ -246,7 +249,6 @@
                             <constraint firstItem="eWo-Sa-Wd8" firstAttribute="top" secondItem="XJp-w7-cf7" secondAttribute="bottom" constant="8" id="v12-nb-sbg"/>
                             <constraint firstItem="eWo-Sa-Wd8" firstAttribute="top" secondItem="0cx-8f-6NN" secondAttribute="top" id="ws9-J8-9iv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="AHr-Yd-O7u"/>
                     </view>
                     <connections>
                         <outlet property="GrenCount" destination="YDt-W3-3YQ" id="36v-yR-tGS"/>
@@ -273,5 +275,9 @@
         <image name="Indicator_G1" width="440" height="72"/>
         <image name="Indicator_R1" width="440" height="72"/>
         <image name="Shield0" width="400" height="660"/>
+        <image name="Weapons" width="400" height="660"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

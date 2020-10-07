@@ -14,7 +14,7 @@
 		FC2B034B250052BA005CE853 /* Adventure_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B034A250052BA005CE853 /* Adventure_1Tests.swift */; };
 		FC2B0356250052BA005CE853 /* Adventure_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B0355250052BA005CE853 /* Adventure_1UITests.swift */; };
 		FC65100E250ECD2500DEE3FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65100D250ECD2400DEE3FC /* ViewController.swift */; };
-		FC9165792507F31B00825483 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9165782507F31B00825483 /* main.storyboard */; };
+		FC9165792507F31B00825483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9165782507F31B00825483 /* Main.storyboard */; };
 		FC91657D2507FF9500825483 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC91657C2507FF9500825483 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,7 @@
 		FC2B0355250052BA005CE853 /* Adventure_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventure_1UITests.swift; sourceTree = "<group>"; };
 		FC2B0357250052BA005CE853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC65100D250ECD2400DEE3FC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FC9165782507F31B00825483 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		FC9165782507F31B00825483 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FC91657C2507FF9500825483 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +104,7 @@
 				FC2B0333250052BA005CE853 /* AppDelegate.swift */,
 				FC91657C2507FF9500825483 /* SceneDelegate.swift */,
 				FC65100D250ECD2400DEE3FC /* ViewController.swift */,
-				FC9165782507F31B00825483 /* main.storyboard */,
+				FC9165782507F31B00825483 /* Main.storyboard */,
 				FC2B0339250052BA005CE853 /* Assets.xcassets */,
 				FC2B033E250052BA005CE853 /* LaunchScreen.storyboard */,
 				FC2B0341250052BA005CE853 /* Info.plist */,
@@ -246,7 +246,7 @@
 				FC2B0340250052BA005CE853 /* LaunchScreen.storyboard in Resources */,
 				FC2B033D250052BA005CE853 /* Preview Assets.xcassets in Resources */,
 				FC2B033A250052BA005CE853 /* Assets.xcassets in Resources */,
-				FC9165792507F31B00825483 /* main.storyboard in Resources */,
+				FC9165792507F31B00825483 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
