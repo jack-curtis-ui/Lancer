@@ -13,32 +13,43 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        shieldPercent.text = "0%"
+        torpCount.text = "x10"
+        grenCount.text = "x5"
+        lazrCount.text = "x200"
     }
     
-    //Label for num torpedos on main
-    @IBOutlet weak var TorpedoCount: UILabel!
-    //Label for num grenades on main
-    @IBOutlet weak var GrenadeCount: UILabel!
-    //Label for num Lazers on main
-    @IBOutlet weak var LazerCount: UILabel!
-    //Label for shield percents
-    @IBOutlet weak var ShieldPercent: UILabel!
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        //Dispose ofresources that can be recreated
+    }
+    //Shields Menu Action
+    @IBAction func shieldMenu(_ sender: Any) {
+        shieldPercent.text = "100%"
+    }
+    //Shield percentage label
+    @IBOutlet weak var shieldPercent: UILabel!
     
-    //Button to activate shields
-    @IBAction func blueButtonPressed(_ sender: UIButton){
-        
+    //Weapon Menu Action
+    @IBAction func weaponMenu(_ sender: Any) {
     }
-    //Button to open weapons menu
-    @IBAction func redButtonPressed(_ sender: UIButton){
-        
+    //Quantum Torpedo Count
+    @IBOutlet weak var torpCount: UILabel!
+    //Concussion Grenade Count
+    @IBOutlet weak var grenCount: UILabel!
+    //Lazer Count
+    @IBOutlet weak var lazrCount: UILabel!
+    //Activate Scram Action
+    @IBAction func scamButton(_ sender: Any) {
     }
-    //button to Scram
-    @IBAction func greenButtonPressed(_ sender: UIButton){
-        
+    //Check Fuel Action
+    @IBAction func checkFuel(_ sender: Any) {
     }
-    //button to check fuel
-    @IBAction func yellowButtonPressed(_ sender: UIButton){
-        
-    }
+    
     
 }
+
+
+    
+    
+
