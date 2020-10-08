@@ -13,11 +13,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //setting shields
         shieldPercent.text = "0%"
+        //loading weapons
         torpCount.text = "x10"
         grenCount.text = "x5"
         lazrCount.text = "x200"
+        //filling fuel tank
+        fuelGauge.image = UIImage(named: "Fuel_Bar_8")
+        //Starting shileds empty
+        shieldMonitor.image = UIImage(named: "Shield0")
+        //Getting weapons image
+        weaponMonitor.image = UIImage(named: "Weapons")
     }
+    //Fuel Gauge
+    @IBOutlet weak var fuelGauge: UIImageView!
+    //Shield display
+    @IBOutlet weak var shieldMonitor: UIImageView!
+    //Weapons Display
+    @IBOutlet weak var weaponMonitor: UIImageView!
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

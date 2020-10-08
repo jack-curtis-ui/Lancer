@@ -121,10 +121,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uoa-yF-3gp" customClass="MidImage">
                                 <rect key="frame" x="376" y="148" width="614" height="650"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fuel_Bar_6" translatesAutoresizingMaskIntoConstraints="NO" id="ITz-Rx-wVo" customClass="RightImage">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fuel_Bar_8" translatesAutoresizingMaskIntoConstraints="NO" id="ITz-Rx-wVo">
                                 <rect key="frame" x="1036" y="148" width="333" height="650"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shield0" translatesAutoresizingMaskIntoConstraints="NO" id="h55-et-7yd" customClass="LeftImage">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shield0" translatesAutoresizingMaskIntoConstraints="NO" id="h55-et-7yd">
                                 <rect key="frame" x="0.0" y="148" width="200" height="330"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="330" id="EMj-2f-7bg"/>
@@ -256,9 +256,12 @@
                         <outlet property="LazeLabel" destination="spd-MA-srm" id="QTg-w7-GqU"/>
                         <outlet property="ShieldPercent" destination="xGF-nK-1xD" id="Pp2-7P-buu"/>
                         <outlet property="TorpedoLabel" destination="F4t-rE-5XR" id="atC-PR-m5H"/>
+                        <outlet property="fuelGauge" destination="ITz-Rx-wVo" id="KTb-Ru-bby"/>
                         <outlet property="lazrCount" destination="spd-MA-srm" id="fiz-cr-Plx"/>
+                        <outlet property="shieldMonitor" destination="h55-et-7yd" id="tmq-jp-6f5"/>
                         <outlet property="shieldPercent" destination="xGF-nK-1xD" id="qD9-Rr-2qs"/>
                         <outlet property="torpCount" destination="F4t-rE-5XR" id="wLu-Y8-45Q"/>
+                        <outlet property="weaponMonitor" destination="rB2-zY-li3" id="QxU-5Q-zEb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yq4-YW-pWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -271,7 +274,7 @@
         <image name="Button_Scram" width="260" height="260"/>
         <image name="Button_Shield" width="260" height="260"/>
         <image name="Button_Weapons" width="260" height="260"/>
-        <image name="Fuel_Bar_6" width="660" height="1300"/>
+        <image name="Fuel_Bar_8" width="660" height="1300"/>
         <image name="Indicator_G1" width="440" height="72"/>
         <image name="Indicator_R1" width="440" height="72"/>
         <image name="Shield0" width="400" height="660"/>
