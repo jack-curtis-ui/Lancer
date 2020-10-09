@@ -86,19 +86,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpd-Ei-aDR">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="84"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator_G1" translatesAutoresizingMaskIntoConstraints="NO" id="3y9-br-sln" customClass="MidIndicator">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator_G1" translatesAutoresizingMaskIntoConstraints="NO" id="3y9-br-sln">
                                         <rect key="frame" x="563" y="24" width="240" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="s1w-xA-Hfq"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator_R1" translatesAutoresizingMaskIntoConstraints="NO" id="ODi-qN-noR" customClass="LeftIndicator">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator_R1" translatesAutoresizingMaskIntoConstraints="NO" id="ODi-qN-noR">
                                         <rect key="frame" x="168" y="24" width="240" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="ZL2-Tw-qh6"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator_R1" translatesAutoresizingMaskIntoConstraints="NO" id="I4x-bD-rUZ" customClass="RightIndicator">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indicator_R1" translatesAutoresizingMaskIntoConstraints="NO" id="I4x-bD-rUZ">
                                         <rect key="frame" x="961" y="24" width="240" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="RyR-nn-ZTT"/>
@@ -118,7 +118,7 @@
                                     <constraint firstItem="3y9-br-sln" firstAttribute="centerX" secondItem="Tpd-Ei-aDR" secondAttribute="centerX" id="mfB-0j-3a1"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uoa-yF-3gp" customClass="MidImage">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uoa-yF-3gp">
                                 <rect key="frame" x="376" y="148" width="614" height="650"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fuel_Bar_8" translatesAutoresizingMaskIntoConstraints="NO" id="ITz-Rx-wVo">
@@ -256,11 +256,16 @@
                         <outlet property="LazeLabel" destination="spd-MA-srm" id="QTg-w7-GqU"/>
                         <outlet property="ShieldPercent" destination="xGF-nK-1xD" id="Pp2-7P-buu"/>
                         <outlet property="TorpedoLabel" destination="F4t-rE-5XR" id="atC-PR-m5H"/>
+                        <outlet property="bottomBar" destination="eWo-Sa-Wd8" id="nAq-W6-D9r"/>
+                        <outlet property="buttonBar" destination="0cx-8f-6NN" id="gaL-Qe-Ind"/>
+                        <outlet property="centerImage" destination="uoa-yF-3gp" id="Jye-yH-Rrg"/>
                         <outlet property="fuelGauge" destination="ITz-Rx-wVo" id="KTb-Ru-bby"/>
                         <outlet property="lazrCount" destination="spd-MA-srm" id="fiz-cr-Plx"/>
                         <outlet property="shieldMonitor" destination="h55-et-7yd" id="tmq-jp-6f5"/>
                         <outlet property="shieldPercent" destination="xGF-nK-1xD" id="qD9-Rr-2qs"/>
+                        <outlet property="topBar" destination="Tpd-Ei-aDR" id="g1e-jX-3RR"/>
                         <outlet property="torpCount" destination="F4t-rE-5XR" id="wLu-Y8-45Q"/>
+                        <outlet property="weaponLabel" destination="XJp-w7-cf7" id="d40-2c-jxN"/>
                         <outlet property="weaponMonitor" destination="rB2-zY-li3" id="QxU-5Q-zEb"/>
                     </connections>
                 </viewController>

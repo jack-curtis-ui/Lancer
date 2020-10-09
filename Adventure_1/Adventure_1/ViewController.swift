@@ -26,11 +26,29 @@ class ViewController: UIViewController {
         //Getting weapons image
         weaponMonitor.image = UIImage(named: "Weapons")
     }
+    //Main Image
+    @IBOutlet weak var centerImage: UIImageView!
+    //Bar containing Buttons
+    @IBOutlet weak var buttonBar: UIView!
+    @IBOutlet weak var bottomBar: UIView!
+    //Bar containing red green monitors
+    @IBOutlet weak var topBar: UIView!
+    //Right Indicator
+    @IBOutlet weak var rightIndicator: UIImageView!
+    //Mid Indicator
+    @IBOutlet weak var midIndicator: UIImageView!
+    //Left Indicator
+    @IBOutlet weak var leftIndicator: UIImageView!
+    
+    
     //Fuel Gauge
+    @IBOutlet weak var fuelLabel: UILabel!
     @IBOutlet weak var fuelGauge: UIImageView!
     //Shield display
+    @IBOutlet weak var shieldLabel: UILabel!
     @IBOutlet weak var shieldMonitor: UIImageView!
     //Weapons Display
+    @IBOutlet weak var weaponLabel: UILabel!
     @IBOutlet weak var weaponMonitor: UIImageView!
     
     override func didReceiveMemoryWarning() {
