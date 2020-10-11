@@ -40,7 +40,6 @@ class ViewController: UIViewController {
     //Left Indicator
     @IBOutlet weak var leftIndicator: UIImageView!
     
-    
     //Fuel Gauge
     @IBOutlet weak var fuelLabel: UILabel!
     @IBOutlet weak var fuelGauge: UIImageView!
