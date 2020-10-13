@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        //Dispose ofresources that can be recreated
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -50,10 +54,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var weaponLabel: UILabel!
     @IBOutlet weak var weaponMonitor: UIImageView!
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        //Dispose ofresources that can be recreated
-    }
     //Shields Menu Action
     @IBAction func shieldMenu(_ sender: Any) {
         shieldPercent.text = "100%"
@@ -70,6 +70,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var grenCount: UILabel!
     //Lazer Count
     @IBOutlet weak var lazrCount: UILabel!
+    
     //Activate Scram Action
     @IBAction func scamButton(_ sender: Any) {
     }
