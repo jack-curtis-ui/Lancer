@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="mTZ-gt-kdd">
             <objects>
-                <viewController id="iID-c7-5YH" customClass="ViewController" customModule="Adventure_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="initialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iID-c7-5YH" customClass="ViewController" customModule="Adventure_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="mainVC" id="fzA-e9-cah">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,7 @@
                                     <constraint firstAttribute="height" constant="334" id="JJs-kB-DeU"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weapons" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-zY-li3" customClass="LeftImage">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weapons" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-zY-li3">
                                 <rect key="frame" x="0.0" y="392" width="200" height="392"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="392" id="RQQ-j5-K8I"/>
