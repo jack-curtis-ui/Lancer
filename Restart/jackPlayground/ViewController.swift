@@ -64,6 +64,7 @@ class ViewController: UIViewController {
     @IBAction func scramButton(_ sender: Any) {
     }
     @IBAction func fuelButton(_ sender: Any) {
+        
     }
     
 }
