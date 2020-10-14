@@ -54,10 +54,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var grenCount: UILabel!
     @IBOutlet weak var lazrCount: UILabel!
     
-    
-    
     //Buttons
     @IBAction func shieldButton(_ sender: Any) {
+        shieldPercent.text = "100%"
+        shieldMonitor.image = UIImage(named: "Shield100")
     }
     @IBAction func weaponButton(_ sender: Any) {
     }

@@ -267,7 +267,7 @@
                         <outlet property="bottomBar" destination="PGx-Hl-9r6" id="wyz-De-QCW"/>
                         <outlet property="bttmLeftLabel" destination="4ov-Ym-PLI" id="BvG-5P-ZNL"/>
                         <outlet property="fuelGauge" destination="t1C-Th-UZM" id="LxY-Yc-yea"/>
-                        <outlet property="grenCount" destination="9Xk-US-S9G" id="sOI-9r-ujJ"/>
+                        <outlet property="grenCount" destination="9Xk-US-S9G" id="9aS-XA-ZaR"/>
                         <outlet property="lazrCount" destination="CHp-aZ-gcm" id="2Mh-IT-hkz"/>
                         <outlet property="leftIndicator" destination="Q79-8J-sYP" id="fNk-Hp-i8P"/>
                         <outlet property="leftLabel" destination="Ow2-0m-MAE" id="9e6-yl-7Rq"/>
