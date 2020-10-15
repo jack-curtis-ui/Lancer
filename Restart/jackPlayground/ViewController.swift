@@ -15,11 +15,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         //Loading fuel bar
         fuelImages += [UIImage(named: "Fuel_Bar_0")!, UIImage(named: "Fuel_Bar_1")!, UIImage(named: "Fuel_Bar_2")!, UIImage(named: "Fuel_Bar_3")!, UIImage(named: "Fuel_Bar_4")!, UIImage(named: "Fuel_Bar_5")!, UIImage(named: "Fuel_Bar_6")!, UIImage(named: "Fuel_Bar_7")!, UIImage(named: "Fuel_Bar_8")!]
-        
+        //Loading shield monitor
+        shieldImages += [UIImage(named: "Shield0")!, UIImage(named: "Shield20")!, UIImage(named: "Shield40")!, UIImage(named: "Shield60")!, UIImage(named: "Shield80")!, UIImage(named: "Shield100")!]
         //HUD Display Initalization
         fuelGauge.image = fuelImages[8]
         weaponDisplay.image = UIImage(named: "Weapons")
-        shieldMonitor.image = UIImage(named: "Shield0")
+        shieldMonitor.image = shieldImages[0]
         //Top Monitor Instantiation
         leftIndicator.image = UIImage(named: "Indicator_G0")
         midIndicator.image = UIImage(named: "Indicator_G0")
@@ -37,6 +38,8 @@ class ViewController: UIViewController {
         
         //Fuel Rods
         fuelRods = 20
+        //Shield status
+        shieldStatus = 100
         
         
         
@@ -65,53 +68,36 @@ class ViewController: UIViewController {
     
     //declaring image arrays
     var fuelImages: [UIImage] = []
+    var shieldImages: [UIImage] = []
     
     var fuelRods: Int = 0
+    var shieldStatus: Int = 0
     
-    //Buttons
-    //currently the shield button
-    @IBAction func allButtons(_ sender: Any) {
-        shieldMonitor.image = UIImage(named: "Shield100")
-        shieldPercent.text = "100%"
-        
-        fuelGauge.image = fuelImages[0]
-    }
-    //this is actually allbuttons
-    @IBAction func shieldButton(_ sender: Any) {
-        
-    }
-    @IBAction func weaponButton(_ sender: Any) {
-        shieldMonitor.image = UIImage(named: "Shield40")
-        fuelGauge.image = fuelImages[8]
-    }
-    @IBAction func scramButton(_ sender: Any) {
-        shieldMonitor.image = UIImage(named: "Shield0")
-        fuelGauge.image = fuelImages[4]
-    }
-    @IBAction func fuelButton(_ sender: Any) {
+    //setter function for adjusting fuel bar
+    func setFuel(fuelRods:Int){
         switch fuelRods {
-            case 18...20:
+            case 20:
                 fuelGauge.image = fuelImages[8]
                 break
-            case 15...17:
+            case 18...19:
                 fuelGauge.image = fuelImages[7]
                 break
-            case 12...14:
+            case 15...17:
                 fuelGauge.image = fuelImages[6]
                 break
-            case 9...11:
+            case 12...14:
                 fuelGauge.image = fuelImages[5]
                 break
-            case 6...8:
+            case 9...11:
                 fuelGauge.image = fuelImages[4]
                 break
-            case 3...5:
+            case 6...8:
                 fuelGauge.image = fuelImages[3]
                 break
-            case 2:
+            case 3...5:
                 fuelGauge.image = fuelImages[2]
                 break
-            case 1:
+            case 1...2:
                 fuelGauge.image = fuelImages[1]
                 break
             case 0:
@@ -120,7 +106,46 @@ class ViewController: UIViewController {
             default:
                 break
         }
+    }
+    
+    func setShield(shieldStatus: Int){
+        switch shieldStatus {
+            case 81...100:
+                shieldMonitor.image = shieldImages[5]
+                break
+            case 61...80:
+                shieldMonitor.image = shieldImages[4]
+                break
+            case 41...60:
+                shieldMonitor.image = shieldImages[3]
+                break
+            case 21...40:
+                shieldMonitor.image = shieldImages[2]
+                break
+            case 1...20:
+                shieldMonitor.image = shieldImages[1]
+                break
+            case 0:
+                shieldMonitor.image = shieldImages[0]
+                break
+            default:
+                break
+        }
+    }
+    //Buttons
+    @IBAction func weaponButton(_ sender: Any) {
+    }
+    @IBAction func scramButton(_ sender: Any) {
+    }
+    @IBAction func fuelButton(_ sender: Any) {
         
+    }
+    @IBAction func shieldButton(_ sender: Any) {
+        shieldMonitor.image = shieldImages[5]
+        shieldPercent.text = "100%"
+        //reducing fuel
+        fuelRods-=1
+        setFuel(fuelRods: fuelRods)
     }
     
 }

@@ -64,8 +64,7 @@
                                         </constraints>
                                         <state key="normal" image="Button_Shield"/>
                                         <connections>
-                                            <action selector="allButtons:" destination="3OM-VR-64o" eventType="touchUpInside" id="aiT-cN-Jvy"/>
-                                            <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="dLJ-FN-Q9G"/>
+                                            <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="vjf-qX-awF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-m4-AGv">
@@ -75,7 +74,6 @@
                                         </constraints>
                                         <state key="normal" image="Button_Weapons"/>
                                         <connections>
-                                            <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="dAd-Et-HJK"/>
                                             <action selector="weaponButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="ruF-Qm-xnp"/>
                                         </connections>
                                     </button>
@@ -87,7 +85,6 @@
                                         <state key="normal" image="Button_Fuel"/>
                                         <connections>
                                             <action selector="fuelButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="YpM-aP-e4e"/>
-                                            <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="aMC-ud-vVG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at6-0X-ssD">
@@ -98,7 +95,6 @@
                                         <state key="normal" image="Button_Scram"/>
                                         <connections>
                                             <action selector="scramButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="wdS-FW-xDZ"/>
-                                            <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="CVK-bf-CLk"/>
                                         </connections>
                                     </button>
                                 </subviews>
