@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  jackPlayground
+//  Lancer
 //
 //  Created by Jack on 10/8/20.
 //
@@ -44,9 +44,10 @@ class ViewController: UIViewController {
         
         
     }
-    //Top and bottom bars
+    //Views
     @IBOutlet weak var topBar: UIView!
     @IBOutlet weak var bottomBar: UIView!
+    @IBOutlet var centerView: [UIView]!
     //HUD Displays
     @IBOutlet weak var fuelGauge: UIImageView!
     @IBOutlet weak var weaponDisplay: UIImageView!

@@ -15,6 +15,7 @@
 		040C2BF1252F8E5000862B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040C2BEF252F8E5000862B1F /* LaunchScreen.storyboard */; };
 		040C2BFC252F8E5100862B1F /* jackPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C2BFB252F8E5100862B1F /* jackPlaygroundTests.swift */; };
 		040C2C07252F8E5100862B1F /* jackPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C2C06252F8E5100862B1F /* jackPlaygroundUITests.swift */; };
+		041882B42538F5F600E79CFE /* WeaponVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041882B32538F5F600E79CFE /* WeaponVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		040C2C02252F8E5100862B1F /* jackPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jackPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040C2C06252F8E5100862B1F /* jackPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jackPlaygroundUITests.swift; sourceTree = "<group>"; };
 		040C2C08252F8E5100862B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041882B32538F5F600E79CFE /* WeaponVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				040C2BE4252F8E4F00862B1F /* AppDelegate.swift */,
 				040C2BE6252F8E4F00862B1F /* SceneDelegate.swift */,
+				041882B32538F5F600E79CFE /* WeaponVC.swift */,
 				040C2BE8252F8E4F00862B1F /* ViewController.swift */,
 				040C2BEA252F8E4F00862B1F /* Main.storyboard */,
 				040C2BED252F8E5000862B1F /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041882B42538F5F600E79CFE /* WeaponVC.swift in Sources */,
 				040C2BE9252F8E4F00862B1F /* ViewController.swift in Sources */,
 				040C2BE5252F8E4F00862B1F /* AppDelegate.swift in Sources */,
 				040C2BE7252F8E4F00862B1F /* SceneDelegate.swift in Sources */,
