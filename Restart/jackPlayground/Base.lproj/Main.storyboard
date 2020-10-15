@@ -64,7 +64,8 @@
                                         </constraints>
                                         <state key="normal" image="Button_Shield"/>
                                         <connections>
-                                            <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="155-1g-hZI"/>
+                                            <action selector="allButtons:" destination="3OM-VR-64o" eventType="touchUpInside" id="aiT-cN-Jvy"/>
+                                            <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="dLJ-FN-Q9G"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-m4-AGv">
@@ -75,6 +76,7 @@
                                         <state key="normal" image="Button_Weapons"/>
                                         <connections>
                                             <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="dAd-Et-HJK"/>
+                                            <action selector="weaponButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="ruF-Qm-xnp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjA-EZ-ssw">
@@ -84,6 +86,7 @@
                                         </constraints>
                                         <state key="normal" image="Button_Fuel"/>
                                         <connections>
+                                            <action selector="fuelButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="YpM-aP-e4e"/>
                                             <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="aMC-ud-vVG"/>
                                         </connections>
                                     </button>
@@ -94,6 +97,7 @@
                                         </constraints>
                                         <state key="normal" image="Button_Scram"/>
                                         <connections>
+                                            <action selector="scramButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="wdS-FW-xDZ"/>
                                             <action selector="shieldButton:" destination="3OM-VR-64o" eventType="touchUpInside" id="CVK-bf-CLk"/>
                                         </connections>
                                     </button>
@@ -117,7 +121,6 @@
                                     <constraint firstItem="xcc-m4-AGv" firstAttribute="width" secondItem="nTC-Ny-ZEa" secondAttribute="width" id="Zet-Q9-Nws"/>
                                     <constraint firstItem="MjA-EZ-ssw" firstAttribute="width" secondItem="nTC-Ny-ZEa" secondAttribute="width" id="dXf-hx-rJT"/>
                                     <constraint firstItem="xcc-m4-AGv" firstAttribute="centerY" secondItem="nTC-Ny-ZEa" secondAttribute="centerY" id="f7e-i7-0I6"/>
-                                    <constraint firstItem="MjA-EZ-ssw" firstAttribute="centerY" secondItem="nTC-Ny-ZEa" secondAttribute="centerY" id="ffR-oc-rQm"/>
                                     <constraint firstAttribute="bottom" secondItem="at6-0X-ssD" secondAttribute="bottom" constant="4" id="iw6-zf-9DV"/>
                                     <constraint firstItem="MjA-EZ-ssw" firstAttribute="height" secondItem="nTC-Ny-ZEa" secondAttribute="height" id="nIH-ZU-0wN"/>
                                     <constraint firstAttribute="bottom" secondItem="nTC-Ny-ZEa" secondAttribute="bottom" constant="4" id="q2a-JO-vJc"/>
