@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "040C2BE0252F8E4F00862B1F"
-               BuildableName = "jackPlayground.app"
-               BlueprintName = "jackPlayground"
-               ReferencedContainer = "container:jackPlayground.xcodeproj">
+               BuildableName = "Lancer_7.app"
+               BlueprintName = "Lancer_7"
+               ReferencedContainer = "container:Lancer_7.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "040C2BF6252F8E5100862B1F"
-               BuildableName = "jackPlaygroundTests.xctest"
-               BlueprintName = "jackPlaygroundTests"
-               ReferencedContainer = "container:jackPlayground.xcodeproj">
+               BuildableName = "Lancer_7Tests.xctest"
+               BlueprintName = "Lancer_7Tests"
+               ReferencedContainer = "container:Lancer_7.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "040C2C01252F8E5100862B1F"
-               BuildableName = "jackPlaygroundUITests.xctest"
-               BlueprintName = "jackPlaygroundUITests"
-               ReferencedContainer = "container:jackPlayground.xcodeproj">
+               BuildableName = "Lancer_7UITests.xctest"
+               BlueprintName = "Lancer_7UITests"
+               ReferencedContainer = "container:Lancer_7.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "040C2BE0252F8E4F00862B1F"
-            BuildableName = "jackPlayground.app"
-            BlueprintName = "jackPlayground"
-            ReferencedContainer = "container:jackPlayground.xcodeproj">
+            BuildableName = "Lancer_7.app"
+            BlueprintName = "Lancer_7"
+            ReferencedContainer = "container:Lancer_7.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "040C2BE0252F8E4F00862B1F"
-            BuildableName = "jackPlayground.app"
-            BlueprintName = "jackPlayground"
-            ReferencedContainer = "container:jackPlayground.xcodeproj">
+            BuildableName = "Lancer_7.app"
+            BlueprintName = "Lancer_7"
+            ReferencedContainer = "container:Lancer_7.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

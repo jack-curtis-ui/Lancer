@@ -13,8 +13,8 @@
 		040C2BEC252F8E4F00862B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040C2BEA252F8E4F00862B1F /* Main.storyboard */; };
 		040C2BEE252F8E5000862B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040C2BED252F8E5000862B1F /* Assets.xcassets */; };
 		040C2BF1252F8E5000862B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040C2BEF252F8E5000862B1F /* LaunchScreen.storyboard */; };
-		040C2BFC252F8E5100862B1F /* jackPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C2BFB252F8E5100862B1F /* jackPlaygroundTests.swift */; };
-		040C2C07252F8E5100862B1F /* jackPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C2C06252F8E5100862B1F /* jackPlaygroundUITests.swift */; };
+		040C2BFC252F8E5100862B1F /* Lancer_7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C2BFB252F8E5100862B1F /* Lancer_7Tests.swift */; };
+		040C2C07252F8E5100862B1F /* Lancer_7UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C2C06252F8E5100862B1F /* Lancer_7UITests.swift */; };
 		041882B42538F5F600E79CFE /* WeaponVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041882B32538F5F600E79CFE /* WeaponVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		040C2BE1252F8E4F00862B1F /* jackPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jackPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040C2BE1252F8E4F00862B1F /* Lancer_7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lancer_7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040C2BE4252F8E4F00862B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		040C2BE6252F8E4F00862B1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		040C2BE8252F8E4F00862B1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,11 +44,11 @@
 		040C2BED252F8E5000862B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040C2BF0252F8E5000862B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040C2BF2252F8E5000862B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		040C2BF7252F8E5100862B1F /* jackPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jackPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		040C2BFB252F8E5100862B1F /* jackPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jackPlaygroundTests.swift; sourceTree = "<group>"; };
+		040C2BF7252F8E5100862B1F /* Lancer_7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lancer_7Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040C2BFB252F8E5100862B1F /* Lancer_7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lancer_7Tests.swift; sourceTree = "<group>"; };
 		040C2BFD252F8E5100862B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		040C2C02252F8E5100862B1F /* jackPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jackPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		040C2C06252F8E5100862B1F /* jackPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jackPlaygroundUITests.swift; sourceTree = "<group>"; };
+		040C2C02252F8E5100862B1F /* Lancer_7UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lancer_7UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040C2C06252F8E5100862B1F /* Lancer_7UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lancer_7UITests.swift; sourceTree = "<group>"; };
 		040C2C08252F8E5100862B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041882B32538F5F600E79CFE /* WeaponVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,9 +81,9 @@
 		040C2BD8252F8E4F00862B1F = {
 			isa = PBXGroup;
 			children = (
-				040C2BE3252F8E4F00862B1F /* jackPlayground */,
-				040C2BFA252F8E5100862B1F /* jackPlaygroundTests */,
-				040C2C05252F8E5100862B1F /* jackPlaygroundUITests */,
+				040C2BE3252F8E4F00862B1F /* Lancer_7 */,
+				040C2BFA252F8E5100862B1F /* Lancer_7Tests */,
+				040C2C05252F8E5100862B1F /* Lancer_7UITests */,
 				040C2BE2252F8E4F00862B1F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,14 +91,14 @@
 		040C2BE2252F8E4F00862B1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				040C2BE1252F8E4F00862B1F /* jackPlayground.app */,
-				040C2BF7252F8E5100862B1F /* jackPlaygroundTests.xctest */,
-				040C2C02252F8E5100862B1F /* jackPlaygroundUITests.xctest */,
+				040C2BE1252F8E4F00862B1F /* Lancer_7.app */,
+				040C2BF7252F8E5100862B1F /* Lancer_7Tests.xctest */,
+				040C2C02252F8E5100862B1F /* Lancer_7UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		040C2BE3252F8E4F00862B1F /* jackPlayground */ = {
+		040C2BE3252F8E4F00862B1F /* Lancer_7 */ = {
 			isa = PBXGroup;
 			children = (
 				040C2BE4252F8E4F00862B1F /* AppDelegate.swift */,
@@ -110,33 +110,33 @@
 				040C2BEF252F8E5000862B1F /* LaunchScreen.storyboard */,
 				040C2BF2252F8E5000862B1F /* Info.plist */,
 			);
-			path = jackPlayground;
+			path = Lancer_7;
 			sourceTree = "<group>";
 		};
-		040C2BFA252F8E5100862B1F /* jackPlaygroundTests */ = {
+		040C2BFA252F8E5100862B1F /* Lancer_7Tests */ = {
 			isa = PBXGroup;
 			children = (
-				040C2BFB252F8E5100862B1F /* jackPlaygroundTests.swift */,
+				040C2BFB252F8E5100862B1F /* Lancer_7Tests.swift */,
 				040C2BFD252F8E5100862B1F /* Info.plist */,
 			);
-			path = jackPlaygroundTests;
+			path = Lancer_7Tests;
 			sourceTree = "<group>";
 		};
-		040C2C05252F8E5100862B1F /* jackPlaygroundUITests */ = {
+		040C2C05252F8E5100862B1F /* Lancer_7UITests */ = {
 			isa = PBXGroup;
 			children = (
-				040C2C06252F8E5100862B1F /* jackPlaygroundUITests.swift */,
+				040C2C06252F8E5100862B1F /* Lancer_7UITests.swift */,
 				040C2C08252F8E5100862B1F /* Info.plist */,
 			);
-			path = jackPlaygroundUITests;
+			path = Lancer_7UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		040C2BE0252F8E4F00862B1F /* jackPlayground */ = {
+		040C2BE0252F8E4F00862B1F /* Lancer_7 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 040C2C0B252F8E5100862B1F /* Build configuration list for PBXNativeTarget "jackPlayground" */;
+			buildConfigurationList = 040C2C0B252F8E5100862B1F /* Build configuration list for PBXNativeTarget "Lancer_7" */;
 			buildPhases = (
 				040C2BDD252F8E4F00862B1F /* Sources */,
 				040C2BDE252F8E4F00862B1F /* Frameworks */,
@@ -146,14 +146,14 @@
 			);
 			dependencies = (
 			);
-			name = jackPlayground;
+			name = Lancer_7;
 			productName = jackPlayground;
-			productReference = 040C2BE1252F8E4F00862B1F /* jackPlayground.app */;
+			productReference = 040C2BE1252F8E4F00862B1F /* Lancer_7.app */;
 			productType = "com.apple.product-type.application";
 		};
-		040C2BF6252F8E5100862B1F /* jackPlaygroundTests */ = {
+		040C2BF6252F8E5100862B1F /* Lancer_7Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 040C2C0E252F8E5100862B1F /* Build configuration list for PBXNativeTarget "jackPlaygroundTests" */;
+			buildConfigurationList = 040C2C0E252F8E5100862B1F /* Build configuration list for PBXNativeTarget "Lancer_7Tests" */;
 			buildPhases = (
 				040C2BF3252F8E5100862B1F /* Sources */,
 				040C2BF4252F8E5100862B1F /* Frameworks */,
@@ -164,14 +164,14 @@
 			dependencies = (
 				040C2BF9252F8E5100862B1F /* PBXTargetDependency */,
 			);
-			name = jackPlaygroundTests;
+			name = Lancer_7Tests;
 			productName = jackPlaygroundTests;
-			productReference = 040C2BF7252F8E5100862B1F /* jackPlaygroundTests.xctest */;
+			productReference = 040C2BF7252F8E5100862B1F /* Lancer_7Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		040C2C01252F8E5100862B1F /* jackPlaygroundUITests */ = {
+		040C2C01252F8E5100862B1F /* Lancer_7UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 040C2C11252F8E5100862B1F /* Build configuration list for PBXNativeTarget "jackPlaygroundUITests" */;
+			buildConfigurationList = 040C2C11252F8E5100862B1F /* Build configuration list for PBXNativeTarget "Lancer_7UITests" */;
 			buildPhases = (
 				040C2BFE252F8E5100862B1F /* Sources */,
 				040C2BFF252F8E5100862B1F /* Frameworks */,
@@ -182,9 +182,9 @@
 			dependencies = (
 				040C2C04252F8E5100862B1F /* PBXTargetDependency */,
 			);
-			name = jackPlaygroundUITests;
+			name = Lancer_7UITests;
 			productName = jackPlaygroundUITests;
-			productReference = 040C2C02252F8E5100862B1F /* jackPlaygroundUITests.xctest */;
+			productReference = 040C2C02252F8E5100862B1F /* Lancer_7UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 040C2BDC252F8E4F00862B1F /* Build configuration list for PBXProject "jackPlayground" */;
+			buildConfigurationList = 040C2BDC252F8E4F00862B1F /* Build configuration list for PBXProject "Lancer_7" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,9 +222,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				040C2BE0252F8E4F00862B1F /* jackPlayground */,
-				040C2BF6252F8E5100862B1F /* jackPlaygroundTests */,
-				040C2C01252F8E5100862B1F /* jackPlaygroundUITests */,
+				040C2BE0252F8E4F00862B1F /* Lancer_7 */,
+				040C2BF6252F8E5100862B1F /* Lancer_7Tests */,
+				040C2C01252F8E5100862B1F /* Lancer_7UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040C2BFC252F8E5100862B1F /* jackPlaygroundTests.swift in Sources */,
+				040C2BFC252F8E5100862B1F /* Lancer_7Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040C2C07252F8E5100862B1F /* jackPlaygroundUITests.swift in Sources */,
+				040C2C07252F8E5100862B1F /* Lancer_7UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +289,12 @@
 /* Begin PBXTargetDependency section */
 		040C2BF9252F8E5100862B1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 040C2BE0252F8E4F00862B1F /* jackPlayground */;
+			target = 040C2BE0252F8E4F00862B1F /* Lancer_7 */;
 			targetProxy = 040C2BF8252F8E5100862B1F /* PBXContainerItemProxy */;
 		};
 		040C2C04252F8E5100862B1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 040C2BE0252F8E4F00862B1F /* jackPlayground */;
+			target = 040C2BE0252F8E4F00862B1F /* Lancer_7 */;
 			targetProxy = 040C2C03252F8E5100862B1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -441,12 +441,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = jackPlayground/Info.plist;
+				INFOPLIST_FILE = Lancer_7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = none.jackPlayground;
+				PRODUCT_BUNDLE_IDENTIFIER = none.Lancer_7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -459,12 +459,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = jackPlayground/Info.plist;
+				INFOPLIST_FILE = Lancer_7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = none.jackPlayground;
+				PRODUCT_BUNDLE_IDENTIFIER = none.Lancer_7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -488,7 +488,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jackPlayground.app/jackPlayground";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lancer_7.app/Lancer_7";
 			};
 			name = Debug;
 		};
@@ -509,7 +509,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jackPlayground.app/jackPlayground";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lancer_7.app/Lancer_7";
 			};
 			name = Release;
 		};
@@ -554,7 +554,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		040C2BDC252F8E4F00862B1F /* Build configuration list for PBXProject "jackPlayground" */ = {
+		040C2BDC252F8E4F00862B1F /* Build configuration list for PBXProject "Lancer_7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				040C2C09252F8E5100862B1F /* Debug */,
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		040C2C0B252F8E5100862B1F /* Build configuration list for PBXNativeTarget "jackPlayground" */ = {
+		040C2C0B252F8E5100862B1F /* Build configuration list for PBXNativeTarget "Lancer_7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				040C2C0C252F8E5100862B1F /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		040C2C0E252F8E5100862B1F /* Build configuration list for PBXNativeTarget "jackPlaygroundTests" */ = {
+		040C2C0E252F8E5100862B1F /* Build configuration list for PBXNativeTarget "Lancer_7Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				040C2C0F252F8E5100862B1F /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		040C2C11252F8E5100862B1F /* Build configuration list for PBXNativeTarget "jackPlaygroundUITests" */ = {
+		040C2C11252F8E5100862B1F /* Build configuration list for PBXNativeTarget "Lancer_7UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				040C2C12252F8E5100862B1F /* Debug */,

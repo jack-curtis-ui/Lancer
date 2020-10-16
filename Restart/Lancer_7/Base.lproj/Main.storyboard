@@ -11,7 +11,7 @@
         <!--ViewController-->
         <scene sceneID="nH4-8F-uYY">
             <objects>
-                <viewController title="ViewController" id="3OM-VR-64o" customClass="ViewController" customModule="jackPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ViewController" id="3OM-VR-64o" customClass="ViewController" customModule="Lancer_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F6s-rg-UYM">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -298,10 +298,11 @@
         <!--WeaponVC-->
         <scene sceneID="gM3-12-7gG">
             <objects>
-                <viewController id="1BW-4Y-fra" customClass="weaponVC" customModule="jackPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1BW-4Y-fra" customClass="weaponVC" customModule="Lancer_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="11k-l8-KPL">
                         <rect key="frame" x="0.0" y="0.0" width="771" height="723"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LH5-H7-NPI"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNp-2C-hfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
